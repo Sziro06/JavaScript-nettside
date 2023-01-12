@@ -64,7 +64,7 @@ button{
 .beholder{
   display: grid;
   grid-template-columns: 50%;
-  grid-template-rows: 25%;
+  grid-template-rows: 22%;
   grid-template-areas: "a b"
                        "c d"
                        "e e"
@@ -107,11 +107,10 @@ button{
 .boks-til-film{
   background-color: #BBD3F2;
   grid-area: e;
+  border-radius: 55px;
   text-align: center;
   font-size: 400%;
-  padding-top: 2%;
   margin: 4% 15%;
-  border-radius: 55px;
 }
 
 .filmen{
@@ -167,7 +166,7 @@ a{
   margin-bottom: 6%;
 }
 
-/* menu funksjonen 
+menu funksjonen 
 
 .sidebar{
   background-color: #BBD3F2;
@@ -183,4 +182,4 @@ nav ul{
 
 nav ul li{
 
-}*/
+}

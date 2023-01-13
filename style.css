@@ -132,9 +132,13 @@ button{
 }
 
 .menu-icon{
-  width: 5.5%;
-  height: 5.5%;
-  margin-left: 6%;
+  width: 30%;
+  height: 100%;
+}
+
+.close-icon{
+  width: 30%;
+  height: 30%;
 }
 
 .første-bildet{
@@ -168,20 +172,53 @@ a{
   margin-bottom: 6%;
 }
 
-menu funksjonen 
+/* dette er min menu */
 
-.sidebar{
-  background-color: #BBD3F2;
-  float: right;
-  width: 20%;
-  height: 100%;
+.menuItem {
+  display: block;
+  margin: 3rem 4rem;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
 }
 
-nav ul{
-  float: right;
-  
+.menuItem:hover {
+  text-decoration: underline;
 }
 
-nav ul li{
-
+.hamburger {
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 8px;
+  background: white;
+  cursor: pointer;
+  height: 7%;
 }
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateX(500%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 80%;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+  margin-block: 0;
+}
+
+.showMenu {
+  transform: translateY(-2%);
+  transform: translatex(400%);
+}
+
+/* slutten av menuen */

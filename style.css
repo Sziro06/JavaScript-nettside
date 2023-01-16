@@ -9,7 +9,7 @@ canvas {
 }
 
 /* dette er videoer, boksene og knappene*/
-.flex-container{
+.flex-beholder{
   display: flex;
   flex-wrap: nowrap;
   background-color: #3E588C;
@@ -20,7 +20,7 @@ canvas {
 
 }
 
-.flex-container > button {
+.flex-beholder > button {
   margin: 0 6%;
 
 }
@@ -29,15 +29,14 @@ button{
   width: 10%;
   height: 70%;
   padding: 1%;
-
   border-radius: 55px;
   font-size: large;
 }
 
-.boks1{
+.tittel{
   background-color: #BBD3F2;
   margin: 2% 20%;
-  padding: 4%;
+  padding: 1%;
   border-radius: 55px;
   text-align: center;
   font-size: 500%;
@@ -46,80 +45,80 @@ button{
 .boks2{
   background-color: #3E588C;
   height: 100%;
-  padding: 1%;
+  padding: 3%;
   padding-bottom: 0.8%;
   border-radius: 55px;
   margin: 2% 20%;
 }
 
-.boks-til-fakta{
+.fakta-tittel{
   background-color: #BBD3F2;
   padding: 1%;
   border-radius: 45px;
   text-align: center;
   font-size: 400%;
-  margin: 1% 15%;
+  margin-top: 5%;
+  margin-bottom: 6%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .beholder{
   display: grid;
   grid-template-columns: 50%;
-  grid-template-rows: 35%;
+  grid-template-rows: 30%;
   grid-template-areas: "a b"
                        "c d"
                        "e e"
                        "f f";
 }
 
-.boks3{
+.rollene{
   background-color: #BBD3F2;
   grid-area: a;
-  margin: 1%;
-  height: 50%;
-  margin-right: 2.5%;
-  margin-bottom: 6%;
+  height: 86%;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-right: 3%;
   border-radius: 45px;
   overflow: scroll;
   text-align: center;
 }
 
-.boks4{
+.historien{
   background-color: #BBD3F2;
   grid-area: b;
-  padding: 0 5%;
-  padding-right: 5%;
-  margin: 1%;
-  margin-bottom: 6%;
-  height: 50%;
+  height: 86%;
+  padding-left: 15%;
+  padding-right: 15%;
   border-radius: 45px;
   overflow: scroll;
   text-align: center;
 }
 
-.boks5{
+.bildet-av-anton{
   grid-area: c;
-  margin-top: 4%;
 }
 
-.boks6{
+.bildet-av-nicholas{
   grid-area: d;
-  margin-top: 4%;
 }
 
-.boks-til-film{
+.film-tittel{
   background-color: #BBD3F2;
   grid-area: e;
   border-radius: 55px;
   text-align: center;
+  padding-top: 0.5%;
   font-size: 400%;
-  margin: 4% 15%;
+  margin-top: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 60%;
 }
 
-.filmen{
+.griden-til-filmen{
   grid-area: f;
-  width: 100%;
-  height: 100%;
-  border-radius: 45px;
 }
 
 /* styre controllen på størrelse av skrift eller bilder */
@@ -131,19 +130,13 @@ button{
   margin-right: 1%;
 }
 
-.menu-icon{
-  width: 30%;
-  height: 100%;
-}
-
 .close-icon{
   width: 30%;
   height: 30%;
 }
 
 .første-bildet{
-  margin: 1%;
-  width: 98%;
+  width: 100%;
   border-radius: 45px;
 }
 
@@ -172,7 +165,18 @@ a{
   margin-bottom: 6%;
 }
 
-/* dette er min menu */
+.filmen{
+  width: 100%;
+  height: 100%;
+  border-radius: 45px;
+}
+
+/* dette er min menu knapp */
+
+.menu-ikonen{
+  width: 30%;
+  height: 100%;
+}
 
 .menuItem {
   display: block;
@@ -196,7 +200,7 @@ a{
   height: 7%;
 }
 
-.closeIcon {
+.lukkeIkonen {
   display: none;
 }
 
@@ -209,7 +213,7 @@ a{
   right: 80%;
   bottom: 0;
   z-index: 99;
-  background: black;
+  background: #07142f;
   color: white;
   list-style: none;
   padding-top: 4rem;
@@ -217,7 +221,6 @@ a{
 }
 
 .showMenu {
-  transform: translateY(-2%);
   transform: translatex(400%);
 }
 
